@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1 id="header">Jakobs forside</h1>
+    <p>Her er noget standard tekst</p>
+    <a href="pictures.html">Et link</a>
+    <button onclick="window.location.href = 'pictures.html'">En knap med link</button>
+    <button id="btn">En knap JavaScript</button>
+    <button onclick="changeHeader()">En anden knap JavaScript</button>
+
+    <h2>En Liste med frugter</h2>
+    <ul>
+        <li>Bananer</li>
+        <li>Æbler</li>
+        <li>Appelsiner</li>
+        <li>Ananas</li>
+        <li>Melon</li>
+    </ul>
+    <img src="pictures/dog.jpg" width="30%">
+
+    <a href="pictures.html">
+        <img src="pictures/dog2.jpg" width="30%" title="En hund på stranden, men også et link">
+    </a>
+
+
+
+
+
+
+    <script>
+        document.getElementById("btn").onclick = () =>{
+            document.getElementById("header").innerText = "En helt ny overskrift"
+        }
+
+        function changeHeader(){
+            document.getElementById("header").innerText = "En helt ny overskrift"
+        }
+    </script>
+</body>
+</html>
